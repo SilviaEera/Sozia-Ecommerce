@@ -157,3 +157,16 @@
 }
 
 /* searchbar */
+/* Remove search clear button in various browsers */
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  display: none;
+}
+
+input[type="search"]::-ms-clear {
+  display: none;
+}
+
+.searchbar-inp {
+  padding: 10px 32px !important;
+}

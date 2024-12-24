@@ -31,11 +31,11 @@
 
 <body data-bs-target=".navbar" data-bs-offset="110">
   <!-- light-dark mode button -->
-  <a href="javascript: void(0);" id="mode" data-class="light" class="text-white rounded-end mode-btn"
+  <!-- <a href="javascript: void(0);" id="mode" data-class="light" class="text-white rounded-end mode-btn"
     onclick="changeMode(event)">
     <i class="mode-dark mx-auto" data-feather="moon"></i>
     <i class="bx-spin mode-light" data-feather="sun"></i>
-  </a>
+  </a> -->
   <!-- Start Navbar -->
   <nav class="navbar navbar-expand-lg fixed-top sticky mx-auto" id="navbar">
     <div class="container">
@@ -45,9 +45,10 @@
       </a>
 
       <!-- searchbar -->
-       <form class="d-flex flex-grow-1 mx-3 position-relative w-50">
-        <input class="form-control rounded-pill" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn position-absolute end-0 top-50 translate-middle-y pe-3" type="submit">
+      <form class="d-flex flex-grow-1 mx-3 position-relative w-50">
+        <input class="form-control rounded-pill  mr-4 searchbar-inp " type="search" placeholder="Search" aria-label="Search" style="::-webkit-search-cancel-button { display: none; }
+                ::-ms-clear { display: none; }">
+        <button class="btn position-absolute end-0 top-50 translate-middle-y pe-3" type="">
           <i class="fa-solid fa-search text-primary"></i>
         </button>
       </form>
@@ -66,7 +67,7 @@
           </li>
           <li class="nav-item dropdown parent-menu-item">
             <a class="nav-link menu-item dropdown-toggle" data-bs-toggle="dropdown" href="javascript:void(0)"
-              role="button" aria-expanded="false">Shop</a>
+              role="button" aria-expanded="false">Category</a>
             <ul class="dropdown-menu border-0">
               <li class="nav-item">
                 <a class="nav-link sub-menu-item" href="products.html">Products</a>
@@ -78,10 +79,8 @@
           </li>
 
           <li class="nav-item">
-              <a class="nav-link sub-menu-item" href="checkout.html"
-                >Checkout</a
-              >
-            </li>
+            <a class="nav-link sub-menu-item" href="checkout.html">Checkout</a>
+          </li>
 
 
           <li class="nav-item">
@@ -93,14 +92,14 @@
                 <span class="visually-hidden">Items added</span>
               </span>
             </button>
-          
+
 
           <li class="nav-item">
-              <a href="profile.html" class="nav-link">
-                <i class="fa-solid fa-user text-primary"></i>
-              </a>
-            </li>
-          
+            <a href="profile.html" class="nav-link">
+              <i class="fa-solid fa-user text-primary"></i>
+            </a>
+          </li>
+
         </ul>
       </div>
     </div>
@@ -125,7 +124,7 @@
             <img src="./images/slider/slider3.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
           data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
@@ -134,7 +133,7 @@
           data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
-        </button>
+        </button> -->
       </div>
       <div class="row">
         <div class="col-lg-12">
@@ -167,84 +166,14 @@
       </div>
       <!-- END ROW -->
       <div class="row">
-        <div class="col-md-3">
-          <div class="sidebar shadow rounded-3 py-4 mt-4">
-            <div class="mb-4 ms-4">
-              <a href="products.html"><i data-feather="grid" class="text-primary me-2"></i></a>
-              <a href="product-list.html"><i data-feather="list" class="text-muted"></i></a>
-            </div>
-            <!-- categories -->
-            <div>
-              <div class="p-3 bg-light">
-                <h6 class="mb-0">Categories</h6>
-              </div>
-              <div class="ms-3 my-3">
-                <div class="form-check mb-2">
-                  <input class="form-check-input fs-16" type="checkbox" value="" id="flexCheckDefaulta1" />
-                  <label class="form-check-label text-dark ms-2" for="flexCheckDefaulta1">Accessories</label>
-                </div>
-                <div class="form-check mb-2">
-                  <input class="form-check-input fs-16" type="checkbox" value="" id="flexCheckChecked11" checked />
-                  <label class="form-check-label text-dark ms-2" for="flexCheckChecked11">Bag</label>
-                </div>
-                <div class="form-check mb-2">
-                  <input class="form-check-input fs-16" type="checkbox" value="" id="flexCheckChecked22" />
-                  <label class="form-check-label text-dark ms-2" for="flexCheckChecked22">Clothing</label>
-                </div>
-                <div class="form-check mb-2">
-                  <input class="form-check-input fs-16" type="checkbox" value="" id="flexCheckChecked33" />
-                  <label class="form-check-label text-dark ms-2" for="flexCheckChecked33">Decore</label>
-                </div>
-                <div class="form-check mb-2">
-                  <input class="form-check-input fs-16" type="checkbox" value="" id="flexCheckChecked44" />
-                  <label class="form-check-label text-dark ms-2" for="flexCheckChecked44">Coffee Pots</label>
-                </div>
-                <a class="fw-normal text-primary" href="javascript:void(0)">& More Products</a>
-              </div>
-            </div>
-
-
-            <!-- start price -->
-            <div class="mt-4">
-              <div class="p-3 bg-light mb-3">
-                <h6 class="mb-0">Price</h6>
-              </div>
-              <div class="ms-3 my-3">
-                <div class="form-check mb-2">
-                  <input class="form-check-input fs-16" type="checkbox" value="" id="flexCheckDefaulta7" />
-                  <label class="form-check-label text-dark ms-2" for="flexCheckDefaulta7">$50 - $99</label>
-                </div>
-                <div class="form-check mb-2">
-                  <input class="form-check-input fs-16" type="checkbox" value="" id="flexCheckChecke" checked />
-                  <label class="form-check-label text-dark ms-2" for="flexCheckChecke">$100 - $199</label>
-                </div>
-                <div class="form-check mb-2">
-                  <input class="form-check-input fs-16" type="checkbox" value="" id="flexCheckCheck" />
-                  <label class="form-check-label text-dark ms-2" for="flexCheckCheck">$200 - $299</label>
-                </div>
-                <div class="form-check mb-2">
-                  <input class="form-check-input fs-16" type="checkbox" value="" id="flexCheckChec" />
-                  <label class="form-check-label text-dark ms-2" for="flexCheckChec">$300 - $399</label>
-                </div>
-                <div class="form-check mb-2">
-                  <input class="form-check-input fs-16" type="checkbox" value="" id="flexCheckChe" />
-                  <label class="form-check-label text-dark ms-2" for="flexCheckChe">$400 - $499</label>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-
 
         <!-- Products Start -->
-        <div class="col-md-9">
+        <div class="col-md-12">
           <div class="row">
             <div class="col-lg-12">
               <h2 class="py-4 text-primary">New Arrivals</h2>
             </div>
+
             <div class="col-lg-4 col-md-6">
               <div class="product-item mt-4">
                 <div class="product-img rounded position-relative">
@@ -554,75 +483,76 @@
   </section>
 
   <!-- newsletter -->
-   <section class="newsletter">
-<div class="container">
-<div class="row">
-<div class="col-sm-12">
-	<div class="content">
-		<h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
-	<div class="input-group">
-         <input type="email" class="form-control" placeholder="Enter your email">
-         <span class="input-group-btn">
-         <button class="btn" type="submit">Subscribe Now</button>
-         </span>
+  <section class="newsletter">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="content">
+            <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Enter your email">
+              <span class="input-group-btn">
+                <button class="btn" type="submit">Subscribe Now</button>
+              </span>
+            </div>
           </div>
-	</div>
-</div>
-</div>
-</div>
-</section>
-
-<!-- delivery option -->
-<section class="delivery-options py-4">
-  <div class="container-fluid">
-        <div class="row flex-sm-column flex-lg-row service-row text-center justify-content-center align-items-center py-3">
-            <div class="col-lg-4 col-sm-12 service-col py-3">
-                <i class="fas fa-money-bill-wave service-icon"></i>
-                <h4 class="service-title">Cash on Delivery</h4>
-                <p class="service-text">Pay cash at your doorstep</p>
-            </div>
-            <div class="col-lg-4 col-sm-12 service-col py-3">
-                <i class="fas fa-truck service-icon"></i>
-                <h4 class="service-title">Delivery</h4>
-                <p class="service-text">All over Bangladesh</p>
-            </div>
-            <div class="col-lg-4 col-sm-12 service-col py-3">
-                <i class="fas fa-undo-alt service-icon"></i>
-                <h4 class="service-title">Happy Return</h4>
-                <p class="service-text">7 days return facility</p>
-            </div>
         </div>
+      </div>
     </div>
-</section>
+  </section>
 
- <section class="sale-section">
-        <div class="sale-popup">
-            <div class="sale-header text-center text-white">
-              <img src="./images//sale/rb_2148336188.png" alt="Clearenc Sale 2024" class="sale-title-img mb-0">
-                <!-- <i class="fa-solid fa-bag-shopping shopping-bag"></i> -->
-                <!-- <h5 class="mb-2 popup-title">Clearenc Sale 2024</h5> -->
-                <button type="button" class="close-btn">&times;</button>
-                <div class="d-flex justify-content-center gap-2">
-                    <div class="countdown-box">
-                        <h5 class="mb-0 time" id="days">07</h5>
-                        <p class="timer-label">Days</p>
-                    </div>
-                    <div class="countdown-box">
-                        <h5 class="mb-0 time" id="hours">15</h5>
-                        <p class="timer-label">Hrs</p>
-                    </div>
-                    <div class="countdown-box">
-                        <h5 class="mb-0 time" id="minutes">24</h5>
-                        <p class="timer-label">Min</p>
-                    </div>
-                    <div class="countdown-box">
-                        <h5 class="mb-0 time" id="seconds">32</h5>
-                        <p class="timer-label">Sec</p>
-                    </div>
-                </div>
-            </div>
+  <!-- delivery option -->
+  <section class="delivery-options py-4">
+    <div class="container-fluid">
+      <div
+        class="row flex-sm-column flex-lg-row service-row text-center justify-content-center align-items-center py-3">
+        <div class="col-lg-4 col-sm-12 service-col py-3">
+          <i class="fas fa-money-bill-wave service-icon"></i>
+          <h4 class="service-title">Cash on Delivery</h4>
+          <p class="service-text">Pay cash at your doorstep</p>
         </div>
-    </section>
+        <div class="col-lg-4 col-sm-12 service-col py-3">
+          <i class="fas fa-truck service-icon"></i>
+          <h4 class="service-title">Delivery</h4>
+          <p class="service-text">All over Bangladesh</p>
+        </div>
+        <div class="col-lg-4 col-sm-12 service-col py-3">
+          <i class="fas fa-undo-alt service-icon"></i>
+          <h4 class="service-title">Happy Return</h4>
+          <p class="service-text">7 days return facility</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sale-section">
+    <div class="sale-popup">
+      <div class="sale-header text-center text-white">
+        <img src="./images//sale/rb_2148336188.png" alt="Clearenc Sale 2024" class="sale-title-img mb-0">
+        <!-- <i class="fa-solid fa-bag-shopping shopping-bag"></i> -->
+        <!-- <h5 class="mb-2 popup-title">Clearenc Sale 2024</h5> -->
+        <button type="button" class="close-btn">&times;</button>
+        <div class="d-flex justify-content-center gap-2">
+          <div class="countdown-box">
+            <h5 class="mb-0 time" id="days">07</h5>
+            <p class="timer-label">Days</p>
+          </div>
+          <div class="countdown-box">
+            <h5 class="mb-0 time" id="hours">15</h5>
+            <p class="timer-label">Hrs</p>
+          </div>
+          <div class="countdown-box">
+            <h5 class="mb-0 time" id="minutes">24</h5>
+            <p class="timer-label">Min</p>
+          </div>
+          <div class="countdown-box">
+            <h5 class="mb-0 time" id="seconds">32</h5>
+            <p class="timer-label">Sec</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- start brand-logo -->
   <section class="client-section sm-section">
@@ -716,7 +646,7 @@
   <!-- END FOOTER -->
 
   <!-- Style switcher -->
-  <div id="style-switcher" onclick="toggleSwitcher()">
+  <!-- <div id="style-switcher" onclick="toggleSwitcher()">
     <div>
       <h3>Select Your Color</h3>
       <ul class="pattern">
@@ -743,56 +673,56 @@
     <div class="bottom">
       <a href="javascript: void(0);" class="settings rounded-end text-light"><i data-feather="droplet"></i></a>
     </div>
-  </div>
+  </div> -->
   <!-- popup -->
-   
-   <script>
-        // Set the countdown to 7 days, 15 hours, 24 minutes, and 32 seconds from now
-        const endTime = new Date().getTime() + (7 * 24 * 60 * 60 * 1000) + (15 * 60 * 60 * 1000) + (24 * 60 * 1000) + (32 * 1000);
 
-        function updateCountdown() {
-            const now = new Date().getTime();
-            const distance = endTime - now;
+  <script>
+    // Set the countdown to 7 days, 15 hours, 24 minutes, and 32 seconds from now
+    const endTime = new Date().getTime() + (7 * 24 * 60 * 60 * 1000) + (15 * 60 * 60 * 1000) + (24 * 60 * 1000) + (32 * 1000);
 
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = endTime - now;
 
-            document.getElementById("days").textContent = days.toString().padStart(2, '0');
-            document.getElementById("hours").textContent = hours.toString().padStart(2, '0');
-            document.getElementById("minutes").textContent = minutes.toString().padStart(2, '0');
-            document.getElementById("seconds").textContent = seconds.toString().padStart(2, '0');
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            if (distance < 0) {
-                clearInterval(interval);
-                document.getElementById("days").textContent = "00";
-                document.getElementById("hours").textContent = "00";
-                document.getElementById("minutes").textContent = "00";
-                document.getElementById("seconds").textContent = "00";
-            }
-        }
+      document.getElementById("days").textContent = days.toString().padStart(2, '0');
+      document.getElementById("hours").textContent = hours.toString().padStart(2, '0');
+      document.getElementById("minutes").textContent = minutes.toString().padStart(2, '0');
+      document.getElementById("seconds").textContent = seconds.toString().padStart(2, '0');
 
-        // Update the countdown every second
-        updateCountdown();
-        const interval = setInterval(updateCountdown, 1000);
+      if (distance < 0) {
+        clearInterval(interval);
+        document.getElementById("days").textContent = "00";
+        document.getElementById("hours").textContent = "00";
+        document.getElementById("minutes").textContent = "00";
+        document.getElementById("seconds").textContent = "00";
+      }
+    }
 
-        document.querySelector('.close-btn').addEventListener('click', function() {
-            document.querySelector('.sale-popup').style.display = 'none';
-        });
-    </script>
+    // Update the countdown every second
+    updateCountdown();
+    const interval = setInterval(updateCountdown, 1000);
+
+    document.querySelector('.close-btn').addEventListener('click', function () {
+      document.querySelector('.sale-popup').style.display = 'none';
+    });
+  </script>
 
   <!-- end Style switcher -->
 
   <!-- Javascript -->
   <script src="js/bootstrap.bundle.min.js"></script>
 
-  
+
 
   <!-- feather icon -->
   <script src="js/feather.js"></script>
 
-  
+
 
   <!-- app js -->
   <script src="js/app.js"></script>
@@ -800,7 +730,7 @@
 
   <!-- pop -->
 
-  
+
 </body>
 
 </html>
